@@ -1,0 +1,89 @@
+@media (min-width: 1200px) {
+  .nav-filter{
+    font-size: 16px;
+  }
+  .nav-filter>li{
+    margin: 0 0 0 40px;
+  }
+  .nav-filter-title div:last-child{
+    margin-top: 9px;
+    margin-left: 7px;
+    width: 9px;
+    height: 9px;
+  }
+  .nav-filter-list{
+    top: -21px;
+    right: -15px;
+    padding: 21px 30px;
+  }
+}
+@media (max-width: 1200px) {
+  .nav-filter{
+    font-size: 1.33333vw;
+  }
+  .nav-filter>li{
+    margin: 0 0 0 3.33333vw;
+  }
+  .nav-filter-title div:last-child{
+    margin-top: .75vw;
+    margin-left: .58333vw;
+    width: .75vw;
+    height: .75vw;
+  }
+  .nav-filter-list{
+    top: -21px;
+    right: -1.25vw;
+    padding: 21px 2.5vw;
+  }
+}
+.nav-filter{
+  position: fixed;
+  z-index: 4;
+  top: 140px;
+  right: 75px;
+  font-weight: 700;
+  pointer-events: all;
+  opacity: 1;
+}
+.nav-filter>li{
+  position: relative;
+  float: left;
+}
+.nav-filter>li:hover .nav-filter-list{
+  opacity: 1;
+  pointer-events: all;
+}
+.nav-filter-title div{
+  float: left;
+}
+.nav-filter-title svg{
+  fill: #fff;
+}
+.nav-filter-title:after{
+  content: '';
+  display: block;
+  clear: both;
+}
+.nav-filter-list {
+  position: absolute;
+  z-index: 2;
+  background: #171717;
+  text-align: right;
+  border: 1px solid #343434;
+  border-top-style: none;
+  white-space: nowrap;
+  pointer-events: none;
+  opacity: 0;
+}
+.nav-filter-li.on a{
+  cursor: default;
+  opacity: 1;
+}
+.nav-filter-li a {
+  display: inline-block;
+  opacity: 0.3;
+  cursor: pointer;
+}
+.nav-filter-li.on a, .nav-filter-li a:hover{
+  opacity: 1;
+}

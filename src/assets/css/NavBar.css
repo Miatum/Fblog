@@ -1,0 +1,506 @@
+/**
+*@Author: miatum
+*@Description: nav
+*@Date: 2:22 2020/10/2
+*/
+@media (min-width: 1599px){
+  .nav{
+    top: 30px;
+    right: 30px;
+    bottom: 30px;
+    left: 30px;
+  }
+  .nav-t {
+    position: relative;
+    height: 90px;
+    width: 100%;
+  }
+  .nav-l{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 90px;
+    height: 100%;
+  }
+  #nav-t-l-w {
+    left: calc((100% - 73.21429vw) / 2 - 25px);
+  }
+}
+@media (max-width: 1599px) and (min-width: 650px) {
+  .nav{
+    top: 20px;
+    right: 20px;
+    bottom: 20px;
+    left: 20px;
+  }
+  .nav-t {
+    position: relative;
+    height: 90px;
+    width: 100%;
+  }
+  .nav-l{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 90px;
+    height: 100%;
+  }
+}
+@media (max-width: 650px){
+  .nav{
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+  }
+  .nav-t {
+    height: 90px;
+  }
+  .nav-l{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 90px;
+    height: 90px;
+  }
+}
+#nav{
+  z-index: 9994;
+  mix-blend-mode: exclusion;
+}
+#nav>div {
+  pointer-events: all;
+}
+.nav{
+  position: fixed;
+  user-select: none;
+  pointer-events: none;
+  color: #fff;
+  overflow: hidden;
+}
+/**
+*@Author: miatum
+*@Description: 纵向图标
+*@Date:2021/3/11
+*/
+.nav-l ul {
+  position: absolute;
+  left: 30px;
+  bottom: 31px;
+}
+.nav-l li {
+  padding: 10px 0;
+}
+.nav-l i {
+  font-size: 30px;
+}
+/**
+*@Author: miatum
+*@Description: logo
+*@Date: 4:22 2020/10/2
+*/
+#nav-t-logo{
+  position: absolute;
+  top: 16px;
+  left: 16px;
+  width: 58px;
+  height: 58px;
+}
+#nav-t-logo svg {
+  fill: #fff;
+  pointer-events: none;
+}
+
+/**
+*@Author: miatum
+*@Description: nav 横向ul
+*@Date: 4:22 2020/10/2
+*/
+@media (min-width: 1599px){
+
+}
+@media (max-width: 1599px) and (min-width: 650px){
+  #nav-t-l-w {
+    left: calc((100% - 73.21429vw + 90px)/2 - 25px);
+  }
+}
+@media (max-width: 650px) {
+  #nav-t-l-w {
+    left: calc((100% - 69.04762vw + 90px) / 2 - 25px);
+  }
+}
+#nav-t-l-w{
+  position: absolute;
+  top: 0;
+  display: flex;
+  overflow: hidden;
+}
+#nav-t-l-w a {
+  height: 90px;
+  padding: 0 25px;
+}
+#nav-t-l-w span {
+  display: block;
+}
+@media (min-width: 1200px) {
+  .nav-t-l{
+    padding: 30px 0 0;
+  }
+}
+@media (max-width: 1200px) {
+  .nav-t-l{
+    padding: calc(52px - 1.83333vw) 0 0;    }
+}
+.nav-t-l {
+  position: relative;
+  pointer-events: none;
+}
+.nav-t-l span {
+  overflow: hidden;
+ }
+.nav-line-wrap {
+  position: relative;
+}
+@media (min-width: 1200px){
+  .nav-t-l-no {
+    font-size: 12px;
+    line-height: 12px;
+  }
+}
+@media (max-width: 1200px) {
+  .nav-t-l-no {
+    font-size: 1vw;
+    line-height: 1vw;
+  }
+}
+@media (max-width: 1200px) {
+  .nav-t-l-name {
+    font-size: 1.33333vw;
+    line-height: 1.5vw;
+  }
+}
+@media (min-width: 1200px){
+  .nav-t-l-name {
+    font-size: 16px;
+    line-height: 18px;
+  }
+}
+.nav-t-l-no {
+  animation: tag-no-down 2s;
+}
+.nav-t-l-name{
+  font-weight: 700;
+  animation: tag-name-up 2s;
+}
+.nav-t-l-name, .nav-t-l-no {
+  position: relative;
+}
+/**
+*@Author: miatum
+*@Description: li hover效果
+*@Date: 13:18 2020/10/2
+*/
+
+@media (max-width: 1200px) {
+
+}
+@media (min-width: 1200px){
+  .nav-t-l .nav-line-w {
+    bottom: -30px;
+    height: 6px;
+  }
+}
+.nav-line-w {
+  position: absolute;
+  pointer-events: none;
+  /*overflow: hidden;*/
+}
+.nav-t-l .nav-line-w {
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+}
+#nav-t-l-w .nav-line-w {
+  transform-origin: 0 0;
+  transform: scaleX(0);
+}
+.nav-line, .nav-line:after, .nav-line:before {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+.nav-line:after, .nav-line:before {
+  content: "";
+  background: #fff;
+}
+.nav-line:after {
+  transition: transform 1s cubic-bezier(.23,1,.32,1);
+  opacity: 1;
+}
+.nav-line-wrap.on .nav-line-x:after, .nav-line-wrap.on .nav-line-x:before, .nav-line-wrap:hover .nav-line-x:after, .nav-line-wrap:hover .nav-line-x:before {
+  transform: translateX(0);
+}
+.nav-line-wrap.on .nav-line:before, .nav-line-wrap:hover .nav-line:before {
+  transition: transform 1s cubic-bezier(.23,1,.32,1);
+  opacity: 1;
+}
+.nav-line-x:before {
+  transform: translateX(-102%);
+}
+.nav-line-x:after {
+  transform: translateX(102%);
+}
+.nav-line:before {
+  opacity: 0;
+}
+.nav-line-wrap.on .nav-line:after, .nav-line-wrap:hover .nav-line:after {
+  transition: none;
+  opacity: 0;
+}
+
+/**
+*@Author: miatum
+*@Description: 跳转后台
+*@Date: 7:09 2020/10/3
+*/
+.circle-w {
+  display: table;
+  position: absolute;
+  animation: show 2s;
+}
+
+@media (min-width: 1200px) {
+  #nav-t-r {
+    top: 25px;
+    right: 31px;
+    height: 40px;
+  }
+}
+@media (max-width: 1200px){
+  #nav-t-r {
+    top: calc(50px - 2.08333vw);
+    right: 2.58333vw;
+    height: 3.33333vw;
+  }
+}
+@media (min-width: 1200px){
+  .circle-txt {
+    margin: 11px 0 0;
+    padding: 0 20px;
+    font-size: 16px;
+    line-height: 18px;
+  }
+}
+@media (max-width: 1200px){
+  .circle-txt {
+    margin: .91667vw 0 0;
+    padding: 0 1.66667vw;
+    font-size: 1.33333vw;
+    line-height: 1.5vw;
+  }
+}
+.circle-txt {
+  font-weight: 700;
+}
+@media (min-width: 1200px){
+  .circle {
+    width: 40px;
+    height: 40px;
+  }
+}
+@media (max-width: 1200px){
+  .circle {
+    width: 3.33333vw;
+    height: 3.33333vw;
+  }
+}
+.circle, .circle-txt {
+  float: left;
+  position: relative;
+  pointer-events: none;
+}
+.circle-light .circle-bg {
+  background: #fff;
+}
+.circle span {
+  display: block;
+}
+.circle-bg {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  border-radius: 100%;
+  overflow: hidden;
+}
+
+@media (min-width: 1200px){
+  .circle-svg-w {
+    top: 14px;
+    left: 12px;
+    width: 16px;
+    height: 12px;
+  }
+}
+@media (max-width: 1200px){
+  .circle-svg-w {
+    top: 1.16667vw;
+    left: 1vw;
+    width: 1.33333vw;
+    height: 1vw;
+  }
+}
+.circle-svg, .circle-svg-w {
+  position: absolute;
+}
+.circle-light .circle-svg svg {
+  fill: #000;
+}
+.circle-svg {
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+.circle-svg:first-child {
+  transition: all .7s cubic-bezier(.23,1,.32,1) .2s;
+}
+.circle-svg:nth-child(2) {
+  transition: all .3s cubic-bezier(.55,.055,.675,.19);
+  transform: translate3d(-100%,0,0);
+  opacity: 0;
+}
+.circle-svg-w.on .circle-svg:first-child, .circle-w:hover .circle-svg:first-child {
+  transition: all .3s cubic-bezier(.55,.055,.675,.19);
+  transform: translate3d(100%,0,0);
+  opacity: 0;
+}
+.circle-svg-w.on .circle-svg:nth-child(2), .circle-w:hover .circle-svg:nth-child(2) {
+  transition: all .7s cubic-bezier(.23,1,.32,1) .2s;
+  transform: translateZ(0);
+  opacity: 1;
+}
+.circle-w:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+/**
+*@Author: miatum
+*@Description: nav border
+*@Date: 2:22 2020/10/2
+*/
+#nav-border{
+  z-index: 9995;
+}
+#nav-border div div{
+  position: absolute;
+  transform-origin: 0 0;
+}
+#nav-border-t-t{
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 1px;
+  border-top: 1px solid #343434;
+  animation: border-right 2s;
+}
+#nav-border-t-b{
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 1px;
+  border-bottom: 1px solid #343434;
+  animation: border-right 2s;
+}
+#nav-border-t-l{
+  right: 0;
+  top: 0;
+  bottom: 0;
+  width: 1px;
+  border-right: 1px solid #343434;
+  animation: border-down 2s;
+}
+#nav-border-l-l {
+  left: 0;
+  top: 0;
+  bottom: 0;
+  width: 1px;
+  border-left: 1px solid #343434;
+  animation: border-down 2s;
+}
+#nav-border-l-r {
+  top: 0;
+  right: 0;
+  bottom: 0;
+  width: 1px;
+  border-right: 1px solid #343434;
+  animation: border-down 2s;
+}
+#nav-border-l-b {
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 1px;
+  border-bottom: 1px solid #343434;
+  animation: border-right 2s;
+}
+/*
+加载动画
+ */
+@keyframes border-right {
+  0%{
+    transform: translate3d(-100%, 0, 0);
+  }
+  30%{
+    transform: translate3d(-95%, 0, 0);
+  }
+  100%{
+    transform: translate3d(0, 0, 0);
+  }
+}
+@keyframes border-down {
+  0%{
+    transform: translate3d(0, -100%, 0);
+  }
+  30%{
+    transform: translate3d(0, -90%, 0);
+  }
+  100% {
+    transform: translate3d(0, 0, 0);
+  }
+}
+@keyframes tag-no-down {
+  0% {
+    transform: translate3d(0, -100%, 0);
+  }
+  30% {
+    transform: translate3d(0, -100%, 0);
+  }
+  100% {
+    transform: translate3d(0, 0, 0);
+  }
+}
+@keyframes tag-name-up {
+  0% {
+    transform: translate3d(0, 100%, 0);
+  }
+  30% {
+    transform: translate3d(0, 100%, 0);
+  }
+  100% {
+    transform: translate3d(0, 0, 0);
+  }
+}
+@keyframes show {
+  0% {
+    opacity: 0;
+  }
+  70% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+ }

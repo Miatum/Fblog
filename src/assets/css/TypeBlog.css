@@ -1,0 +1,130 @@
+.page{
+  position: absolute;
+  top: 0;
+  left: 0;
+  min-height: 100vh;
+}
+@media (min-width: 1599px){
+  .page {
+    padding: 0 13.39286vw;
+    width: 73.21429vw;
+  }
+}
+@media (max-width: 1599px) and (min-width: 650px){
+  .page {
+    padding: 0 calc(13.39286vw - 45px) 0 calc(13.39286vw + 45px);
+    width: 73.21429vw;
+  }
+}
+@media (max-width: 650px){
+  .page {
+    padding: 0 15.47619vw 0 calc(15.47619vw + 45px);
+    width: 69.04762vw;
+  }
+}
+.work-w{
+  display: flex;
+  flex-wrap: wrap;
+}
+.work {
+  position: relative;
+}
+.work-w .work {
+  margin-top: 11.90476vw;
+  animation: show 1s;
+}
+.work-s-s {
+  margin-left: 1.78571vw;
+}
+@media (min-width: 650px){
+  .work-s-s {
+    width: 16.96429vw;
+  }
+}
+@media (max-width: 650px){
+  .work-s-s {
+    width: 15.47619vw;
+  }
+}
+.work-s-s:nth-child(4n+1){
+  margin-left: 0;
+}
+.work-s-s .work-img {
+  height: 22.61905vw;
+}
+.work-img {
+  cursor: pointer;
+  -webkit-user-drag: none;
+  user-drag: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+.work-img img{
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+/*
+read this one下方的线条样式及动画
+ */
+.work-a {
+  display: table;
+  font-weight: bold;
+}
+.underline-w {
+  position: relative;
+}
+.underline {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  overflow: hidden;
+  pointer-events: none;
+}
+.underline-w.on .underline:before, .underline-w:hover .underline:before {
+  transition: transform 1s cubic-bezier(.23,1,.32,1);
+  transform: translateX(0);
+  opacity: 1;
+}
+.underline:before {
+  transform: translateX(-102%);
+  opacity: 0;
+}
+.underline-l:after, .underline-l:before {
+  border-bottom: 1px solid #fff;
+}
+.underline:after, .underline:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: .2vw;
+}
+.underline-w.on .underline:after, .underline-w:hover .underline:after {
+  transition: none;
+  transform: translateX(0);
+  opacity: 0;
+}
+.underline:after {
+  transition: transform 1s cubic-bezier(.23,1,.32,1);
+  transform: translateX(102%);
+  opacity: 1;
+}
+/*
+动画
+ */
+@keyframes show {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}

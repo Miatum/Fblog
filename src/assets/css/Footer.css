@@ -1,0 +1,223 @@
+@media (min-width: 1200px) {
+  .footer-r {
+    padding: 0 0 0 37.5vw;
+  }
+  .footer-form {
+    width: 285px;
+  }
+  .footer-label {
+    font-size: 20px;
+    line-height: 24px;
+  }
+  .footer-input-w {
+    margin: 14px 0 0;
+    height: 32px;
+  }
+  .footer-input {
+    width: calc(100% - 26px);
+    font-size: 16px;
+    line-height: 32px;
+  }
+  .footer-submit {
+    right: -10px;
+    width: 36px;
+  }
+  .footer-submit span {
+    right: 10px;
+    top: 10px;
+    width: 16px;
+    height: 12px;
+  }
+  .footer-l-address {
+    margin: 70px 0 0;
+    font-size: 16px;
+    line-height: 20px;
+  }
+  .footer-l-address a {
+    margin-top: 16px;
+  }
+  .footer-c {
+    left: 37.5vw;
+    bottom: 30px;
+    font-size: 14px;
+  }
+}
+@media (max-width: 1200px) {
+}
+.footer-w {
+  height: 100vh;
+  min-height: 41.42857vw;
+  display: flex;
+  align-items: center;
+}
+.footer {
+  position: relative;
+}
+.footer, .footer-w {
+  position: relative;
+}
+.footer-r a {
+  position: relative;
+  padding-right: 3.33333vw;
+}
+/*
+footer右侧
+ */
+
+.footer-r .title-xl {
+  display: table;
+  line-height: 5.55714vw;
+  letter-spacing: -.02vw;
+}
+.footer-r .title-xl.on {
+  -webkit-text-fill-color: transparent;
+  cursor: default;
+}
+.footer .footer-r .title-xl.on {
+  -webkit-text-stroke: 1.2px #000;
+}
+.title-xl {
+  margin-left: -.41667vw;
+  font-size: 5.35714vw;
+  line-height: 4.88095vw;
+  letter-spacing: -.14881vw;
+  font-weight: 700;
+}
+/*
+footer左侧
+ */
+.footer-l {
+  position: absolute;
+  left: 0;
+  bottom: .71429vw;
+}
+.footer-form {
+  position: relative;
+}
+.footer-label {
+  font-weight: 400;
+  cursor: pointer;
+}
+.footer-input-w {
+  position: relative;
+  width: 100%;
+}
+.footer-line {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: calc(100% + 2px);
+  pointer-events: none;
+  overflow: hidden;
+}
+.footer-dark .footer-line:before {
+  border-bottom: 1px solid #fff;
+}
+.footer-line:after {
+  border-bottom: 1px solid #7f7f7f;
+  transform: translate3d(-100%,0,0);
+}
+.footer-line:after, .footer-line:before {
+  content: "";
+  position: absolute;
+  bottom: 1px;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  transition: transform 1.2s cubic-bezier(.23,1,.32,1);
+}
+.footer-input {
+  -webkit-user-select: text;
+  -ms-user-select: text;
+  user-select: text;
+}
+.footer-submit {
+  position: absolute;
+  bottom: 0;
+  height: 100%;
+}
+.footer-submit span {
+  position: absolute;
+  pointer-events: none;
+}
+.footer-dark .footer-submit svg {
+  fill: #fff;
+}
+.footer-submit:hover span:first-child {
+  transition: all .3s cubic-bezier(.55,.055,.675,.19);
+  transform: translate3d(100%,0,0);
+  opacity: 0;
+}
+.footer-submit span:first-child {
+  transition: all .7s cubic-bezier(.23,1,.32,1) .2s;
+}
+.footer-submit:hover span:nth-child(2) {
+  transition: all .7s cubic-bezier(.23,1,.32,1) .2s;
+  transform: translateZ(0);
+  opacity: 1;
+}
+.footer-submit span:nth-child(2) {
+  transition: all .3s cubic-bezier(.55,.055,.675,.19);
+  transform: translate3d(-100%,0,0);
+  opacity: 0;
+}
+.footer-l-address {
+  display: table;
+}
+.footer-l-address div {
+  font-weight: 200;
+}
+.footer-l-address a {
+  display: table;
+  font-weight: 500;
+}
+.underline-w {
+  position: relative;
+}
+.underline {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  overflow: hidden;
+  pointer-events: none;
+}
+.underline-w.on .underline:before, .underline-w:hover .underline:before {
+  transition: transform 1s cubic-bezier(.23,1,.32,1);
+  transform: translateX(0);
+  opacity: 1;
+}
+.footer-l-address .underline:after, .footer-l-address .underline:before {
+  bottom: 2px;
+}
+.underline:before {
+  transform: translateX(-102%);
+  opacity: 0;
+}
+.underline-l:after, .underline-l:before {
+  border-bottom: 1px solid #fff;
+}
+.underline:after, .underline:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: .2vw;
+}
+.underline-w.on .underline:after, .underline-w:hover .underline:after {
+  transition: none;
+  transform: translateX(0);
+  opacity: 0;
+}
+.underline:after {
+  transition: transform 1s cubic-bezier(.23,1,.32,1);
+  transform: translateX(102%);
+  opacity: 1;
+}
+.footer-c {
+  right: 0;
+  position: absolute;
+}

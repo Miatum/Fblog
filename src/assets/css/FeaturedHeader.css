@@ -1,0 +1,92 @@
+/**
+*@Author: miatum
+*@Description: header
+*@Date: 7:24 2020/10/4
+*/
+
+.header{
+  position: relative;
+}
+.uppercase{
+  padding: calc(150px + 7.79762vw) 0 0;
+  overflow: hidden;
+  font-weight: 300;
+}
+@media (min-width: 1200px){
+  .uppercase {
+    font-size: 12px;
+    line-height: 28px;
+    letter-spacing: .8px;
+  }
+}
+@media (max-width: 1200px){
+  .uppercase {
+    font-size: 1vw;
+    line-height: 2.33333vw;
+    letter-spacing: .06667vw;
+  }
+}
+.uppercase span{
+  display: block;
+}
+.title-w{
+  padding: 4.82143vw 0 0;
+  overflow: hidden;
+}
+.title-xl.title-xl-sp {
+  line-height: 5.71429vw;
+  overflow: hidden;
+}
+.title-xl {
+  margin-left: -.41667vw;
+  font-size: 5.35714vw;
+  line-height: 4.88095vw;
+  letter-spacing: -.14881vw;
+  font-weight: 700;
+}
+.title-xl-sp span{
+  display: block;
+  overflow: hidden;
+}
+.line{
+  height: .35714vw;
+  transform-origin: 0 0;
+}
+.line-l {
+  background: #fff;
+}
+.title-w .line {
+  margin: 1.72619vw 0 0;
+  width: 8.92857vw;
+}
+.words{
+  animation: up 2s;
+}
+.line{
+  animation: right 2s;
+}
+/*
+动画
+ */
+@keyframes up {
+  0%{
+    transform: translate3d(0,102%,0);
+  }
+  50%{
+    transform: translate3d(0,102%,0);
+  }
+  100%{
+    transform: translate3d(0,0,0);
+  }
+}
+@keyframes right {
+  0%{
+    transform: translate3d(-102%,0,0);
+  }
+  50%{
+    transform: translate3d(-102%,0,0);
+  }
+  100%{
+    transform: translate3d(0,0,0);
+  }
+}
