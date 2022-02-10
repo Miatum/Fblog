@@ -173,6 +173,7 @@
 @media (max-width: 650px){
   .page {
     width: 100vw;
+    padding: 0 16px;
   }
   .line{
     height: 0vw;

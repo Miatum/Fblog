@@ -54,7 +54,9 @@
     left: 0px;
   }
   .nav-t {
+    position: relative;
     height: 90px;
+    width: 100%;
   }
   .nav-l{
     position: absolute;
@@ -116,9 +118,6 @@
 *@Description: nav 横向ul
 *@Date: 4:22 2020/10/2
 */
-@media (min-width: 1599px){
-
-}
 @media (max-width: 1599px) and (min-width: 650px){
   #nav-t-l-w {
     left: calc((100% - 73.21429vw + 90px)/2 - 25px);
@@ -149,7 +148,12 @@
 }
 @media (max-width: 1200px) {
   .nav-t-l{
-    padding: calc(52px - 1.83333vw) 0 0;    }
+    padding: calc(52px - 1.83333vw) 0 0;
+  }
+  /*不显示序号*/
+  #nav-t-l-w span .nav-t-l-no {
+    display: none;
+  }
 }
 .nav-t-l {
   position: relative;
