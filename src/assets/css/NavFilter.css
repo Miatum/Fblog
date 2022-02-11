@@ -1,4 +1,4 @@
-@media (min-width: 1200px) {
+@media (min-width: 1599px) {
   .nav-filter{
     top: 140px;
     right: 75px;
@@ -20,9 +20,30 @@
     padding: 21px 30px;
   }
 }
-@media (max-width: 1200px) {
+@media (max-width: 1599px) and (min-width: 650px) {
   .nav-filter{
-    top: 90px;
+    top: 130px;
+    right: 75px;
+    font-size: 1.5vw;
+  }
+  .nav-filter>li{
+    margin: 0 0 0 40px;
+  }
+  .nav-filter-title div:last-child{
+    margin-top: .75vw;
+    margin-left: .58333vw;
+    width: .75vw;
+    height: .75vw;
+  }
+  .nav-filter-list{
+    top: -21px;
+    right: -15px;
+    padding: 21px 30px;
+  }
+}
+@media (max-width: 650px) {
+  .nav-filter{
+    top: 110px;
     right: 25px;
     font-size: 1.33333vw;
   }

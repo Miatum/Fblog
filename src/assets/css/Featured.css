@@ -83,6 +83,8 @@
   .work-a {
     margin: 14px 0 0;
     font-size: 16px;
+    display: table;
+    font-weight: bold;
   }
 }
 @media (max-width: 1599px) and (min-width: 650px){
@@ -182,9 +184,14 @@
   .work-s-s, .work-s-m, .work-s-l {
     width: 100vw;
     height: 47.61905vw;
+    margin-top: 5vw;
   }
-  .work-l .work-txt {
+  .work-txt {
     width: 36.96429vw;
+    margin-top: -30vw;
+  }
+  .work-a {
+    display: none;
   }
 }
 .page{
@@ -279,10 +286,6 @@
 }
 .work-p-1 {
   font-weight: lighter;
-}
-.work-a {
-  display: table;
-  font-weight: bold;
 }
 .underline-w {
   position: relative;
