@@ -10,18 +10,18 @@
               </a>
               <div class="work-txt">
                 <div class="line line-l"></div>
-                <h2 class="work-title">
+                <h2 class="work-tag">
                   <a @click="blogDetail(blog)">{{blog.tag_name}}</a>
                 </h2>
                 <a class="work-p" @click="blogDetail(blog)">
-                  <span class="work-p-0">{{blog.title}}</span>
-                  <span class="work-p-1">{{blog.intro}}</span>
+                  <span class="work-p-title">{{blog.title}}</span>
+                  <span class="work-p-intro">{{blog.intro}}</span>
                 </a>
                 <a class="work-a underline-w" @click="blogDetail(blog)">
                   Read this one
                   <span class="underline underline-l"></span>
                 </a>
-                <div class="work-txt-cover" style="opacity: 0;"></div>
+                <div class="work-txt-cover"></div>
               </div>
             </div>
             <div v-else>
@@ -39,7 +39,7 @@
                   Read this one
                   <span class="underline underline-l"></span>
                 </a>
-                <div class="work-txt-cover" style="opacity: 0;"></div>
+                <div class="work-txt-cover"></div>
               </div>
             </div>
           </li>

@@ -1,0 +1,128 @@
+/**
+*@Author: miatum
+*@Description: exploresingle
+*@Date: 17:40 2020/10/16
+*/
+@media (min-width: 1599px){
+  .page {
+    padding: 0 13.39286vw;
+    width: 73.21429vw;
+  }
+  .cover {
+    margin-left: -13.39286vw;
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+    animation: show 1s;
+  }
+  .blog-txt {
+    margin: calc(-28px - 16.78571vw) 0 0;
+    min-height: calc(28px + 16.78571vw);
+  }
+  .blog-tag{
+    font-size: 12px;
+    line-height: 28px;
+    letter-spacing: .8px;
+  }
+}
+@media (max-width: 1599px) and (min-width: 650px){
+  .page {
+    padding: 0 calc(13.39286vw - 45px) 0 calc(13.39286vw + 45px);
+    width: 73.21429vw;
+  }
+  .cover {
+    margin-left: calc(-13.39286vw - 45px);
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+    animation: show 1s;
+  }
+  .blog-txt {
+    margin: -19.11905vw 0 0;
+    min-height: 19.11905vw;
+  }
+  .blog-tag{
+    font-size: 1vw;
+    line-height: 2.33333vw;
+    letter-spacing: .06667vw;
+  }
+}
+@media (max-width: 650px){
+  .page {
+    padding: 0 0;
+    width: 100vw;
+  }
+  .cover {
+    width: 100vw;
+    object-fit: cover;
+    animation: show 1s;
+  }
+  .blog-txt {
+    margin: -19.11905vw 0 0;
+    min-height: 19.11905vw;
+  }
+  .blog-tag{
+    font-size: 1vw;
+    line-height: 2.33333vw;
+    letter-spacing: .06667vw;
+  }
+}
+.page{
+  position: absolute;
+  top: 0;
+  left: 0;
+  min-height: 100vh;
+}
+.blog-tag{
+  font-weight: 100;
+  overflow: hidden;
+}
+.title-xl.title-xl-sp{
+  padding: 4.7619vw 0 0;
+  margin-left: -.41667vw;
+  font-size: 5.35714vw;
+  font-weight: 700;
+  width: 60.71429vw;
+  line-height: 5.71429vw;
+  overflow: hidden;
+}
+
+.title-xl-sp>span {
+  margin: -.83333vw 0 0;
+  display: block;
+}
+.intro-w{
+  overflow: hidden;
+}
+.blog-txt p{
+  padding: 1.78571vw 0 0;
+  max-width: 705px;
+  width: 41.96429vw;
+  font-weight: lighter;
+}
+.words{
+  animation: up 1s;
+}
+@keyframes up {
+  0%{
+    transform: translate3d(0,102%,0);
+  }
+  50% {
+    transform: translate3d(0,102%,0);
+  }
+  100%{
+    transform: translate3d(0,0,0);
+  }
+}
+@keyframes show {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
