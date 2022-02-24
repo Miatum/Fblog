@@ -140,5 +140,5 @@ export default {
   }
 }
 </script>
-<style src="../assets/css/Featured.css" scoped>
+<style src="../assets/sass/partials/BlogDetail.css" scoped>
 </style>

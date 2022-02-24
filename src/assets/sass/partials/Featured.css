@@ -1,53 +1,67 @@
-@media (min-width: 1599px){
+@charset "UTF-8";
+@media (min-width: 1599px) {
   /*页面样式*/
   .page {
     padding: 0 13.39286vw;
     width: 73.21429vw;
   }
+
   /*线条*/
-  .line{
+  .line {
     height: .35714vw;
   }
+
   /*small分三个尺寸，一行展示3篇*/
   .work-s-s {
     margin-left: 1.78571vw;
     width: 16.96429vw;
   }
+
   .work-s-m {
     width: 23.21429vw;
   }
+
   .work-s-l {
     margin-left: 1.78571vw;
     width: 29.46429vw;
   }
+
   .work-s-s .work-img {
     height: 22.61905vw;
   }
+
   .work-s-m .work-img {
     height: 30.95238vw;
   }
+
   .work-s-l .work-img {
     height: 39.28571vw;
   }
+
   /*large分左右位置，一行展示一篇*/
   .work-l {
     height: 47.61905vw;
     width: 100%;
   }
+
   .work-l .work-img {
     position: absolute;
     top: 0;
     height: 100%;
   }
+
   .work-l-l .work-img {
     width: 63.39286vw;
   }
+
   .work-l-r .work-img {
     width: 63.33333vw;
   }
+
   .work-l-l .work-img {
     right: 23.21429vw;
   }
+
   .work-l-r .work-img {
     left: 23.21429vw;
   }
@@ -56,36 +70,44 @@
   .work-l .work-tag {
     padding: 45px 0 0;
   }
+
   .work-l .work-p-intro {
     padding: 20px 0 0;
     max-width: 285px;
   }
+
   .work-l .work-txt {
     width: 16.96429vw;
   }
+
   .work-l-l .work-txt {
     top: 0;
     right: 0;
   }
+
   .work-l-r .work-txt {
     bottom: 0;
     left: 0;
   }
+
   /*t通用文本样式*/
   .work-tag {
     font-size: 20px;
     line-height: 24px;
   }
+
   .work-p-intro {
     font-size: 16px;
     line-height: 24px;
   }
+
   .work-a {
     margin: 14px 0 0;
     font-size: 16px;
     display: table;
     font-weight: bold;
   }
+
   .work-p-title {
     margin: .95238vw 0 0;
     font-size: 1.54762vw;
@@ -94,104 +116,129 @@
     letter-spacing: -.02976vw;
   }
 }
-@media (max-width: 1599px) and (min-width: 650px){
+@media (max-width: 1599px) and (min-width: 650px) {
   .page {
     padding: 0 13.39286vw;
     width: 73.21429vw;
   }
+
   /*small分3中尺寸，一行展示3篇（s,m,l各1篇）*/
   .work-s-s {
     width: 16.96429vw;
     margin-left: 1.78571vw;
   }
+
   .work-s-m {
     width: 23.21429vw;
   }
+
   .work-s-l {
     width: 29.46429vw;
     margin-left: 1.78571vw;
   }
+
   .work-s-s .work-img {
     height: 22.61905vw;
   }
+
   .work-s-m .work-img {
     height: 30.95238vw;
   }
+
   .work-s-l .work-img {
     height: 39.28571vw;
   }
+
   /*large分左右位置，一行展示一篇*/
   .work-l {
     height: 47.61905vw;
     width: 100%;
   }
+
   .work-l .work-img {
     position: absolute;
     top: 0;
     height: 100%;
   }
+
   .work-l-l .work-img {
     width: 63.39286vw;
   }
+
   .work-l-r .work-img {
     width: 63.33333vw;
   }
+
   .work-l-l .work-img {
     right: 23.21429vw;
   }
+
   .work-l-r .work-img {
     left: 23.21429vw;
   }
+
   .work-l .work-tag {
     padding: 3.75vw 0 0;
   }
+
   .work-l .work-p-intro {
     padding: 1.66667vw 0 0;
     max-width: 23.75vw;
   }
+
   .work-l .work-txt {
     width: 16.96429vw;
   }
+
   .work-l-l .work-txt {
     top: 0;
     right: 0;
   }
+
   .work-l-r .work-txt {
     bottom: 0;
     left: 0;
   }
+
   /*通用文本样式*/
   .work-tag {
     font-size: 1.66667vw;
     line-height: 2vw;
   }
+
   .work-p-intro {
     line-height: 2vw;
   }
+
   .work-a, .work-p-intro {
     font-size: 1.33333vw;
   }
+
   .work-a {
     margin: 1.16667vw 0 0;
   }
+
   /*线条*/
   .line {
     height: .2vw;
   }
 }
-@media (max-width: 650px){
+@media (max-width: 650px) {
   .page {
     width: 100vw;
     padding: 0 16px;
   }
-  .line{
+
+  .line {
     height: 0vw;
   }
+
   /*最小尺寸设备，博客采用统一样式*/
   .work-s-s, .work-s-m, .work-s-l {
     width: 100vw;
     margin-top: 20vw;
   }
+
   .work-txt {
     width: 100vw;
     height: 20vw;
@@ -199,38 +246,42 @@
     padding: 0 5vw;
     /*margin-top: -30vw;*/
   }
+
   .work-a {
     display: none;
   }
-  .work-p-title {
-
-  }
 }
-.page{
+.page {
   position: absolute;
   top: 0;
   left: 0;
   min-height: 100vh;
 }
+
 /*线条加载动画*/
-.line{
+.line {
   animation: right 1s;
   transform-origin: 0 0;
 }
+
 /*线条颜色*/
 .line-l {
   background: #fff;
 }
-.work-w{
+
+.work-w {
   display: flex;
   flex-wrap: wrap;
 }
-#ul-1 .work:first-child{
+
+#ul-1 .work:first-child {
   margin-top: 2.55952vw;
 }
+
 .work-w .work {
   margin-top: 11.90476vw;
 }
+
 .work {
   position: relative;
 }
@@ -244,44 +295,56 @@
   user-select: none;
   overflow: hidden;
 }
-.work-img img{
+
+.work-img img {
   object-fit: cover;
   width: 100%;
   height: 100%;
   transition: all 1s;
   animation: narrow 2s;
 }
-.work-img img:hover{
+
+.work-img img:hover {
   transform: scale(1.05);
 }
+
 .work-l .work-txt {
   position: absolute;
 }
+
 .work-txt .line {
   width: 100%;
 }
+
 .work-tag {
   font-weight: 400;
 }
+
 .work-tag a {
   display: table;
 }
-.work-p{
+
+.work-p {
   font-weight: lighter;
   font-size: 16px;
 }
+
 .work-p span {
   pointer-events: none;
 }
+
 .work-p-title, .work-p-intro {
   display: block;
 }
+
 .work-p-intro {
   font-weight: lighter;
 }
+
 .underline-w {
   position: relative;
 }
+
 .underline {
   position: absolute;
   top: 0;
@@ -291,18 +354,22 @@
   overflow: hidden;
   pointer-events: none;
 }
+
 .underline-w.on .underline:before, .underline-w:hover .underline:before {
-  transition: transform 1s cubic-bezier(.23,1,.32,1);
+  transition: transform 1s cubic-bezier(0.23, 1, 0.32, 1);
   transform: translateX(0);
   opacity: 1;
 }
+
 .underline:before {
   transform: translateX(-102%);
   opacity: 0;
 }
+
 .underline-l:after, .underline-l:before {
   border-bottom: 1px solid #fff;
 }
+
 .underline:after, .underline:before {
   content: "";
   position: absolute;
@@ -311,25 +378,31 @@
   right: 0;
   bottom: .2vw;
 }
+
 .underline-w.on .underline:after, .underline-w:hover .underline:after {
   transition: none;
   transform: translateX(0);
   opacity: 0;
 }
+
 .underline:after {
-  transition: transform 1s cubic-bezier(.23,1,.32,1);
+  transition: transform 1s cubic-bezier(0.23, 1, 0.32, 1);
   transform: translateX(102%);
   opacity: 1;
 }
+
 .work-txt-cover {
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
-  background-image: linear-gradient(rgba(0,0,0,0.0), rgba(0,0,0,0.7));
+  background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.7));
   pointer-events: none;
 }
-.filter{
+
+.filter {
   animation: show 2s;
 }
+
+/*# sourceMappingURL=Featured.css.map */
